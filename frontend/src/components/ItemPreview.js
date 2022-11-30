@@ -41,10 +41,10 @@ const ItemPreview = (props) => {
 
       <img
         alt="item"
-        src={item.image ? item.image : "/placeholder.png"}
+        src={ item.image ? item.image : "/placeholder.png" }
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
-        onError={addDefaultSrc}
+        onError={ addDefaultSrc }
       />
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
