@@ -30,7 +30,7 @@ const ItemPreview = (props) => {
   };
 
   const addDefaultSrc = (ev) => {
-    ev.target.src = "placeholder.png";
+    ev.target.setAttribute("src", "placeholder.png");
   }
 
   return (
