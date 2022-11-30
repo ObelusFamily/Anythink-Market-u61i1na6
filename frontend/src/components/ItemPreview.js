@@ -30,7 +30,7 @@ const ItemPreview = (props) => {
   };
 
   const addDefaultSrc = (ev) => {
-    ev.target.setAttribute("src", "placeholder.png");
+    ev.target.setAttribute("src", "/placeholder.png");
   }
 
   return (
@@ -41,7 +41,7 @@ const ItemPreview = (props) => {
 
       <img
         alt="item"
-        src={item.image}
+        src={item.image ? item.image : "/placeholder.png"}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
         onError={addDefaultSrc}
