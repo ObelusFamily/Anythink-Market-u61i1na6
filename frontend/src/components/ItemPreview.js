@@ -29,16 +29,22 @@ const ItemPreview = (props) => {
     }
   };
 
+  const addDefaultSrc = (ev) => {
+    ev.target.src = "placeholder.png";
+  }
+
   return (
     <div
       className="card bg-dark border-light p-3"
       style={{ borderRadius: "20px" }}
     >
+
       <img
         alt="item"
         src={item.image}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
+        onError={addDefaultSrc}
       />
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
