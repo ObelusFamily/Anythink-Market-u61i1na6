@@ -144,6 +144,10 @@ router.post("/", auth.required, function(req, res, next) {
         return res.sendStatus(401);
       }
 
+      if (!req.body.item.image) {
+        req.body.item.image = "/placeholder.png";
+      }
+
       var item = new Item(req.body.item);
 
       item.seller = user;
