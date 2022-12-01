@@ -34,7 +34,7 @@ const ItemSearch = ({ onLoad }) => {
         Promise.all([agent.Tags.getAll(), itemsPromise()])
       );
     }
-  }, [search, onLoad])
+  }, [search, onLoad]);
 
   return (
     <span className="input-container">
