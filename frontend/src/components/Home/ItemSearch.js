@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import agent from "../../agent";
-import {
-  HOME_PAGE_LOADED
-} from "../../constants/actionTypes";
+import { HOME_PAGE_LOADED } from "../../constants/actionTypes";
 
 const mapStateToProps = (state) => ({
   ...state.home,
