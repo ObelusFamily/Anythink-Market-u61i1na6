@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 import agent from "../../agent";
 import {
   HOME_PAGE_LOADED
@@ -45,7 +45,7 @@ const ItemSearch = ({ onLoad }) => {
         onChange={handleSearchChange}
       />
     </span>
-  )
+  );
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemSearch);
