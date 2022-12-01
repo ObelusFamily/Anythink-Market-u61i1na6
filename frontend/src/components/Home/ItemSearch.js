@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {connect } from "react-redux"
+import { connect } from "react-redux"
 import agent from "../../agent";
 import {
   HOME_PAGE_LOADED
@@ -16,7 +16,7 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch({ type: HOME_PAGE_LOADED, tab, pager, payload })
 });
 
-const ItemSearch = ({onLoad}) => {
+const ItemSearch = ({ onLoad }) => {
   const [search, setSearch] = useState("");
 
   const handleSearchChange = (e) => {
