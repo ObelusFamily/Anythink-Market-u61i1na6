@@ -1,4 +1,5 @@
 import React from "react";
+import ItemSearch from "./ItemSearch";
 import logo from "../../imgs/logo.png";
 
 const Banner = () => {
@@ -8,7 +9,8 @@ const Banner = () => {
         <img src={logo} alt="banner" />
         <div>
           <span>A place to </span>
-          <span id="get-part">get</span>
+          <span id="get-part">get </span>
+          <ItemSearch />
           <span> the cool stuff.</span>
         </div>
       </div>
